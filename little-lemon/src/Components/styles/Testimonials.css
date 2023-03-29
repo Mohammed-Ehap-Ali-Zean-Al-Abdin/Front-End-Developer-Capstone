@@ -1,0 +1,56 @@
+#Testimonials{
+    background-color: var(--main-color);
+    min-height: 80vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+#Testimonials h2{
+    font-size: xx-large;
+    color: var(--second-color);
+}
+#peopleRateCards{
+    display: grid;
+    grid-template-columns: repeat(4,20vw);
+    width: 90vw;
+    margin: 4vh auto;
+    justify-content: space-around;
+}
+.rateCard{
+    background-color: var(--th3-color);
+    border-radius: 16px;
+    margin: 3vh 0;
+}
+.rateCard h4{
+    font-size: larger;
+    font-weight: bold;
+    margin-bottom: 0.5vh;
+    color: var(--main-color);
+}
+.rateCard p{
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: 3vh;
+}
+.myPhoto{
+    width: 20vh;
+    border-radius: 100%;
+    margin: 5vh  auto;
+}
+.starImg{
+    width: 2vw;
+    margin: 0.25vw;
+}
+@media screen and (max-width: 430px){
+    #peopleRateCards{
+        grid-template-columns: repeat(1,80vw);
+    }
+    .starImg{
+        width: 4vw;
+        margin: 0.25vw;
+    }
+}
+@media screen and (min-width:620px) and (max-width: 1053px)  {
+    #peopleRateCards{
+        grid-template-columns: repeat(2,40vw);
+      }
+}

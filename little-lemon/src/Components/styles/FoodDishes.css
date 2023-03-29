@@ -1,0 +1,332 @@
+#foodDishes{
+    padding-top: 15vh;
+}
+.foodCards{
+    width: 90vw;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,20vw);
+    justify-content: space-around;
+  }
+  .foodCard{
+    display: flex;
+    flex-direction: column;
+    margin: 2vh auto;
+    background-color: var(--th4-color);
+    border-radius: 8px;
+    width: 25vw;
+    height: 90%;
+  }
+  .foodCard h4{
+    display: inline-block;
+    margin: 3vh 0.5vw;
+    font-size: 22px;
+  }
+  .foodCard span{
+    margin: 3vh 0.5vw;
+    font-weight: bold;
+    color: var(--th5-color);
+}
+  .foodCard p{
+    display: inline-block;
+    margin: 3vh 1vw;
+    font-size: 18px;
+    color: var(--main-color);
+    text-align: left;
+    height: 20vh;
+  }
+  .foodCard article{
+    display: inline-block;
+    position: relative;
+    height: 55vh;
+    width: 100%;
+  }
+  .foodCard .img{
+    display: inline-block;
+    width: 100%;
+    height: 35vh;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+  }
+  #first .img{
+      background-image: url("../images/greekSalad.jpg");
+      background-size: cover;
+  }
+  #second .img{
+      background-image: url("../images/Bruschetta.svg");
+      background-size: cover;
+  }
+  #third .img{
+      background-image: url("../images/lemon dessert.jpg");
+      background-size: cover;
+  }
+  #scooter{
+      width: 2vw;
+      height: 2vw;
+      margin-top: 3vh;
+  }
+  .foodCard #delivery{
+      margin-top: 2vh;
+  }
+  #specials{
+    margin: 2vh auto;
+  }
+  #specials h2{
+    font-size: xx-large;
+  }
+  #specials button{
+    width: 15vw;
+    padding: 0.75vw;
+    border-radius: 10px;
+    border-color: var(--second-color);
+    background-color: var(--second-color);
+    margin-top: 2vh;
+    font-weight: bold;
+    font-size: medium;
+  }
+  #specials button:hover{
+    color: var(--second-color);
+    background-color: #000;
+  }
+  .flexRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  @media screen and (max-width: 430px){
+    #specials h2{
+      font-size: xx-large;
+    }
+    #specials{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    #specials button{
+      width: 35vw;
+      padding: 0.75vw;
+      margin: auto;
+      margin-top: 2vh;
+
+    }
+    #scooter{
+      width: 6vw;
+      height: 6vw;
+      margin-top: 3vh;
+    }
+    .foodCards{
+      width: 90vw;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 75vw;
+      justify-content: space-around;
+    }
+    .foodCard {
+      width: 75vw;
+    }
+    .foodCard .img{
+      display: inline-block;
+      width: 75vw;
+      border-top-right-radius: 8px;
+      border-top-left-radius: 8px;
+    }
+  }
+  @media screen and (max-width: 619px) and (min-width: 431px) {
+    .foodCards{
+      width: 90vw;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 65vw;
+      justify-content: space-around;
+    }
+    .foodCard{
+      width: 65vw;
+    }
+    .foodCard article{
+      width: 65vw;
+    }
+    .foodCard .img{
+      display: inline-block;
+      width: 65vw;
+      border-top-right-radius: 8px;
+      border-top-left-radius: 8px;
+    }
+  }
+  @media screen and (min-width:620px) and (max-width: 1053px)  {
+    header ul li {
+      font-size: 14.5px;
+    }
+    .foodCards{
+      width: 90vw;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 35vw 35vw;
+      justify-content: space-around;
+    }
+    .foodCard .img{
+      display: inline-block;
+      width: 35vw;
+      border-top-right-radius: 8px;
+      border-top-left-radius: 8px;
+    }
+      .foodCard{
+        display: flex;
+        flex-direction: column;
+        margin: 2vh auto;
+        background-color: var(--th4-color);
+        border-radius: 8px;
+        width: 35vw;
+        height: 90%;
+      }
+      .foodCard h4{
+        display: inline-block;
+        margin: 3vh 0.5vw;
+        font-size: 22px;
+      }
+      .foodCard span{
+          margin: 3vh 0.5vw;
+          font-weight: bold;
+          color: var(--th5-color);
+      }
+      .foodCard p{
+        display: inline-block;
+        margin: 3vh 1vw;
+        font-size: 18px;
+        color: var(--main-color);
+        text-align: left;
+        height: 20vh;
+      }
+      .foodCard article{
+        display: inline-block;
+        position: relative;
+        height: 55vh;
+      }
+      .foodCard .img{
+        display: inline-block;
+        width: 100%;
+        height: 35vh;
+        border-top-right-radius: 8px;
+        border-top-left-radius: 8px;
+      }
+      #first .img{
+          background-image: url("../images/greekSalad.jpg");
+          background-size: cover;
+      }
+      #second .img{
+          background-image: url("../images/Bruschetta.svg");
+          background-size: cover;
+      }
+      #third .img{
+          background-image: url("../images/lemon dessert.jpg");
+          background-size: cover;
+      }
+      #scooter{
+          width: 2vw;
+          height: 2vw;
+          margin-top: 3vh;
+      }
+      .foodCard #delivery{
+          margin-top: 2vh;
+      }
+  }
+  /*********************************************************************************************************
+  ******************************************1054************************************************************
+  ********************************************************************************************************** */
+  @media screen and (min-width: 1054px) {
+    header{
+      height: 15vh;
+      display: grid;
+      grid-template-columns: 10vw 20vw 20vw 40vw  10vw;
+      grid-template-areas: ". logo .  nav .";
+  }
+  .logo{
+      display: inline-block;
+      grid-area: logo;
+      margin-top: 2vh;
+      width: 20vw;
+  }
+  header nav{
+      grid-area: nav;
+     
+  }
+  header ul{
+      list-style: none;
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+  }
+  header ul li{
+      display: inline-block;
+      margin: 5vh 2vw;
+      font-weight: bold;
+  }
+  header ul li a {
+      text-decoration: none;
+      color: black;
+  }
+    .foodCards{
+      width: 90vw;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(3,20vw);
+      justify-content: space-around;
+    }
+    .foodCard{
+      display: flex;
+      flex-direction: column;
+      margin: 2vh auto;
+      background-color: var(--th4-color);
+      border-radius: 8px;
+      width: 25vw;
+      height: 90%;
+    }
+    .foodCard h4{
+      display: inline-block;
+      margin: 3vh 0.5vw;
+      font-size: 22px;
+    }
+    .foodCard span{
+        margin: 3vh 0.5vw;
+        font-weight: bold;
+    }
+    .foodCard p{
+      display: inline-block;
+      margin: 3vh 1vw;
+      font-size: 18px;
+      color: var(--main-color);
+      text-align: left;
+      height: 20vh;
+    }
+    .foodCard article{
+      display: inline-block;
+      position: relative;
+      height: 55vh;
+    }
+    .foodCard .img{
+      display: inline-block;
+      width: 100%;
+      height: 35vh;
+      border-top-right-radius: 8px;
+      border-top-left-radius: 8px;
+    }
+    #first .img{
+        background-image: url("../images/greekSalad.jpg");
+        background-size: cover;
+    }
+    #second .img{
+        background-image: url("../images/Bruschetta.svg");
+        background-size: cover;
+    }
+    #third .img{
+        background-image: url("../images/lemon dessert.jpg");
+        background-size: cover;
+    }
+    #scooter{
+        width: 2vw;
+        height: 2vw;
+        margin-top: 3vh;
+    }
+    .foodCard #delivery{
+        margin-top: 2vh;
+    }
+  }

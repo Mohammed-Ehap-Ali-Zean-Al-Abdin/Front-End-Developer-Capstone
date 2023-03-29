@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --main-color: #495e57;
+    --second-color:#f4ce14;
+    --th3-color : white;
+    --th4-color : #edefee;
+    --th5-color : #ee9972;
+}
+body{
+    overflow-x: hidden;
+}
+header{
+    height: 15vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 10vw 20vw 20vw 40vw  10vw;
+    grid-template-areas: ". logo .  nav .";
+    background-color: var(--th3-color);
+}
+.logo{
+    display: inline-block;
+    grid-area: logo;
+    margin-top: 2vh;
+    width: 20vw;
+}
+header nav{
+    grid-area: nav;
+}
+header ul{
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+header ul li{
+    display: inline-block;
+    margin: 5vh 2vw;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    width: max-content;
+}
+header ul li a {
+    text-decoration: none;
+    color: black;
+}
+@media screen and (max-width: 430px){
+    header{
+        height: 18vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: var(--th3-color);
+    }
+    header ul li {
+        font-size: 11px;
+        margin-top: 3vh;
+        margin-bottom: 1vh;
+    }
+    header ul{
+        margin: 0 auto;
+        justify-content: center;
+    }
+    header nav{
+        height: auto;
+    }
+    .logo{
+        display: inline-block;
+        margin-top: 2vh;
+        width: 30vw;
+        margin: 0 auto;
+    }
+}
