@@ -1,5 +1,5 @@
 <?php
 $username = "root";
 $password = "";
-$database = new PDO("mysql:host=localhost; dbname=codeZone;",$username,$password);
+$database = new PDO("mysql:host=localhost; dbname=test;",$username,$password);
 ?>

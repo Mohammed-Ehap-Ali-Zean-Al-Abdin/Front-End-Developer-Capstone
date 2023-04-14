@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState , useEffect } from 'react';
 import Header from './Header';
 import Footer from './Footer';
 import "./styles/Table.css";
@@ -36,6 +36,8 @@ const fetchAPI = function(date) {
     const [role, setRole] = useState("role");
     const [time, setTime] = useState("empty");
     const [dateInput, setDateInput] = useState("");
+    useE
+
     function validateEmail(e){
       let validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
       return e.match(validRegex);
@@ -70,7 +72,7 @@ const fetchAPI = function(date) {
         <Header/>
         <main>
           <section id='table'>
-            <form onSubmit={handleSubmit}>
+            <form  onSubmit={handleSubmit}>
                 <div className="Field"> 
                           <label htmlFor='userName'> 
                               User name <sup>*</sup> 
