@@ -2,6 +2,7 @@ import { useState , useEffect } from 'react';
 import Header from './Header';
 import Footer from './Footer';
 import "./styles/Table.css";
+const axios = require('axios/dist/browser/axios.cjs');
 const seededRandom = function (seed) {
     var m = 2**35 - 31;
     var a = 185852;
@@ -36,7 +37,10 @@ const fetchAPI = function(date) {
     const [role, setRole] = useState("role");
     const [time, setTime] = useState("empty");
     const [dateInput, setDateInput] = useState("");
-    useE
+    const [done, setDone] = useState(false);
+    useEffect(() => {
+      axios.post("https://localhost/FRONT-END-DEVELOPER-CAPSTONE/backEnd/api/login.php",{userName:userName,guests:guests,email:email,role:role,time:time})
+    }, [done]);
 
     function validateEmail(e){
       let validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
@@ -58,11 +62,13 @@ const fetchAPI = function(date) {
       setDate([]);
       setDateInput(""); 
       setRole("role");
-      setTime("empty"); 
+      setTime("empty");
+      setDone(false); 
     }; 
     
     const handleSubmit = (e) => { 
       e.preventDefault(); 
+      setDone(true);
       submitAPI({userName:userName,guests:guests,email:email,role:role,time:time})
       alert("Done sir!"); 
       clearForm(); 
