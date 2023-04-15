@@ -2,7 +2,7 @@ import { useState , useEffect } from 'react';
 import Header from './Header';
 import Footer from './Footer';
 import "./styles/Table.css";
-const axios = require('axios/dist/browser/axios.cjs');
+import axios from "axios";
 const seededRandom = function (seed) {
     var m = 2**35 - 31;
     var a = 185852;
